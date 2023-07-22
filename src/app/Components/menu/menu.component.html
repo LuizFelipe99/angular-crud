@@ -1,0 +1,29 @@
+<!-- sidebar.component.html -->
+
+<div class="sidebar">
+    <!-- Coloque aqui os itens do menu -->
+    <div class="avatar-container">
+      <img src="https://cdn.icon-icons.com/icons2/2104/PNG/512/avatar_icon_129437.png" class="img-avatar" alt="">
+      <button class="logout-button" (click)="logout()"><b>Sair</b></button>
+      <p class="welcome">Bem-vindo {{username}}</p>
+      <!-- badge de admin -->
+      <div *ngIf="user_group === '1'">
+        <div class="badge-success">
+          Administrador
+        </div>
+      </div>
+      <!-- badge de admin -->
+    </div>
+  <ul class="menu-list">
+    <li class="menu-item"routerLink="/home">Home</li>
+    <li class="menu-item"routerLink="/form-create-user">Cadastro de usuario</li>
+    <li class="menu-item"routerLink="/license">Licença</li>
+    <li class="menu-item"routerLink="/client">Meus dados</li>
+    <li class="menu-item"routerLink="/contract">Contrato</li>
+    <li class="menu-item"routerLink="/config">Configurações de plataforma</li>
+    <!-- Adicione mais itens do menu, se necessário -->
+  </ul>
+</div>
+  
+
+  

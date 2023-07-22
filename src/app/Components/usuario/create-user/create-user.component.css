@@ -1,0 +1,10 @@
+
+  .form-inputs{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .form-item{
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+  }

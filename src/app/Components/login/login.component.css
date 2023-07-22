@@ -1,0 +1,81 @@
+/* login.component.css */
+
+h2 {
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  
+  label {
+    margin-bottom: 5px;
+    color: #000;
+  }
+  
+  .input-login {
+    padding: 8px;
+    font-size: 16px;
+    border-style: none;
+    border-left: 5px #16b8d9 solid;
+    width: 90%;
+    margin-bottom: 5%;
+  }
+  
+  button {
+    background-color: #086bd4;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+    transition: 0.6s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+
+/* Estilo para a mensagem de erro */
+.error-message {
+  color: red;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+  background: rgba(255,0,0,0.30) 100%;
+  border-radius: 10px;
+  padding: 10px;
+}
+.card-header{
+  text-align: center;
+}
+.card{
+  background-color: #007bff;
+  width: 25%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(16,126,148,1) 0%, rgba(22,184,217,1) 100%);
+  transition: 0.6s;
+}
+.card-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+  

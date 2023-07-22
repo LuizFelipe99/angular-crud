@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="card form">
+    <div class="card-header">
+      <h2>LOGIN</h2>
+    </div>
+    <div class="card-container">
+      <form (submit)="onSubmit()">
+        <div> 
+          <label for="user">Login:</label>
+          <input type="text" class="input-login" id="user" name="user" [(ngModel)]="formData.user" required>
+        </div>
+        
+        <div>
+          <label for="password">Senha:</label>
+          <input type="password" id="password" class="input-login"  name="password" [(ngModel)]="formData.password" required>
+        </div>
+        <div>
+          <button type="submit">Login</button>
+        </div>
+      </form>
+    </div>
+
+  <!-- Exibe a mensagem de erro condicionalmente com *ngIf -->
+  <div *ngIf="loginError" class="error-message">
+      Credenciais inválidas. Verifique seu usuário e senha e tente novamente.
+    </div>
+  </div>
+</div>
