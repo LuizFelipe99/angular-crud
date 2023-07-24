@@ -1,0 +1,63 @@
+<div class="main-content">
+  <h1 style="text-align: center;" >Usuarios da plataforma</h1>
+  <div class="form">
+    <span>Usuarios da plataforma GYM </span>
+
+    <!-- filtros de usuaris -->
+    <form action="" class="form-inputs">
+
+      <!-- input usuario -->
+      <div class="form-item wp2">
+        <label for="username">Usuario</label>
+        <input type="text" class="input-form">
+      </div>
+      <!-- input usuario -->
+
+      <!-- input email -->
+      <div class="form-item wp3">
+        <label for="username">E-mail</label>
+        <input type="text" class="input-form">
+      </div>
+      <!-- input email -->
+
+      <!-- select para status -->
+      <div class="form-item wp1">
+        <label for="username">Status</label>
+        <select class="input-form">
+          <option value="1" >Ativo</option>
+          <option value="2">Inativo</option>
+        </select>
+      </div>
+      <!-- select para status -->
+
+
+      <div class="form-item wp1" style="justify-content: center;" >
+        <button  class="input-form btn-success " >Filtrar</button>
+      </div>
+
+    </form>
+
+    <!-- tabela que exibe os usuarios -->
+    <table id="customers">
+      <tr>
+        <th>ID</th>
+        <th>Login</th>
+        <th>E-mail</th>
+        <th>Contato</th>
+        <th>Status</th>
+      </tr>
+        <tr *ngFor="let data of users;">
+          <td> {{ data.id }} </td>
+          <td> {{ data.username }} </td>
+          <td> {{ data.email }} </td>
+          <td> {{ data.phone }} </td>
+          <td> {{ data.active }} <div [ngClass]="data.active === 'ATIVO' ? 'circle-success':'circle-error'"></div> </td>
+        </tr>
+      </table>
+    
+    <!-- Caso não haja users ou ele esteja vazio, exibe uma mensagem -->
+    <div *ngIf="!users || users.length === 0">
+      <p>Nenhum dado disponível.</p>
+    </div>
+  </div>
+</div>

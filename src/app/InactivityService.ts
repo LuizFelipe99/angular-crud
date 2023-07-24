@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
   providedIn: 'root',
 })
 export class InactivityService {
-  private inactivityTime = 60000; // 10 minutos em milissegundos
+  private inactivityTime = 6000; // 10 minutos
   private interval: any;
 
   @HostListener('window:mousemove', ['$event'])

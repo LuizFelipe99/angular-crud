@@ -16,12 +16,25 @@ export class AuthService {
 
   constructor(private http: HttpClient) { }
 
+  // função Login
   login(username: string, password: string): Promise<any> {
     const loginData = { user: username, password }; // Criar objeto com os dados de login
 
     const loginEndpoint = `${this.API_URL}/login.php`; // Substitua pelo endpoint da API de login
 
     return this.http.post(loginEndpoint, loginData).toPromise()
+      .then(response => {
+        return response;
+      })
+      .catch(error => {
+        return Promise.reject(error);
+      });
+  }
+
+  // criando metodo para buscar todos usuarios
+  getUsers(): Promise<any> {
+    const endPoint = `${this.API_URL}/user/get-users.php`;
+    return this.http.post(endPoint, '').toPromise()
       .then(response => {
         return response;
       })

@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+  --primary-color: #16b8d9;
+}
 
 html,
 body {
@@ -21,7 +24,7 @@ body {
 }
 
 .form {
-  padding: 1%;
+  padding: 2%;
   border-radius: 10px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
   display: flex;
@@ -39,13 +42,14 @@ body {
   font-weight: bold;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  cursor:default
 }
 
 .input-form {
   padding: 8px;
   font-size: 16px;
   border-style: none;
-  border-left: 5px #16b8d9 solid;
+  border-left: 5px var(--primary-color) solid;
   border-bottom: 1px black solid;
   border-right: 1px black solid;
   border-top: 1px black solid;
@@ -70,7 +74,7 @@ body {
 @media screen and (max-width: 320px) {
   .card {
     width: 90% !important;
-    height: 70% !important;
+    height: 40% !important;
   }
 }
 
@@ -84,4 +88,45 @@ body {
   .main-content {
     margin-left: 1% !important;
   }
+}
+
+
+.form-inputs{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.form-item{
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+}
+
+.wp1{
+  width: 10%;
+}
+.wp2{
+  width: 20%;
+}
+.wp3{
+  width: 30%;
+}
+.wp4{
+  width: 40%;
+}
+.wp5{
+  width: 50%;
+}
+.wp6{
+  width: 60%;
+}
+
+.btn-success{
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  border:  none;
+}
+.btn-success:hover{
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }

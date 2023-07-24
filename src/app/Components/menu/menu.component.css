@@ -75,5 +75,5 @@
 }
 
 .menu-item:hover {
-  background-color: rgba(4, 90, 140, 1);
+  background-color:var(--primary-color);
 }

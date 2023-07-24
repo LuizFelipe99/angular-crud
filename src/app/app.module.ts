@@ -16,6 +16,7 @@ import { LicenseComponent } from './Components/license/license.component';
 import { DataClientComponent } from './Components/data-client/data-client.component';
 import { ContractComponent } from './Components/contract/contract.component';
 import { ConfigPlataformComponent } from './Components/config-plataform/config-plataform.component';
+import { GetUserComponent } from './Components/usuario/get-user/get-user.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { ConfigPlataformComponent } from './Components/config-plataform/config-p
     LicenseComponent,
     DataClientComponent,
     ContractComponent,
-    ConfigPlataformComponent
+    ConfigPlataformComponent,
+    GetUserComponent,
   ],
   imports: [
     BrowserModule,
